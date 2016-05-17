@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividades Futuras</title>
+	<link rel="stylesheet" href="css/actividades.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div id="contenedor">
+		<header>
+			<div class="row">
+				<div class="col-xs-3">
+					<button type="button" class="btn btn-primary">Regresar</button>
+				</div>
+				<div class="col-xs-6">
+					<h1>Control de Actividades Futuras</h1>
+				</div>
+				<div class="col-xs-3"></div>
+			</div>
+		</header>
+			<div style="clear:both;"></div>
+			<hr>
+		<section>
+			<div class="fechaA">
+				<div id="fecha"><h3>Fecha:</h3></div>
+			</div>
+			<div class="fechaA">
+				<select class="form-control" id="fechas">
+				</select>
+			</div>
+			<div class="fechaA">
+			</div>
+			<div class="fechaA">
+			</div>
+			<div class="fechaA">
+			<button type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="btn btn-primary">Nueva Actividad</button>
+			</div>
+			<div class="lugar">
+			<div id="lugar"><h3>Lugar:</h3></div>
+			</div>
+			<div class="lugar">
+			<select class="form-control" id="lugares">
+			</select>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="actividad">
+			<div id="actividad"><h3>Nombre Act.</h3></div>
+			</div>
+			<div class="actividad">
+			<input type="text" class="form-control" placeholder="Ingrese coincidencia">
+			</div>
+			<div style="clear:both;"></div>
+			<div class="divVerTabla">
+				<div class="row">
+					<div class="col-xs-12" id="tablaActFut"></div>
+				</div>
+			</div>
+			<div class="divVert">
+					<button type="button" id="inventarioGuardar">Almacenar Cambios</button>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					
+				</div>
+			</div>
+
+
+
+
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="exampleModalLabel">Crear nueva actividad</h4>
+					      </div>
+					      <div class="modal-body">
+					        <form>
+					          <div class="form-group">
+					          	<div class="row">
+					          	<div class="col-xs-4">
+					          		<label for="nombreActividad" class="control-label">Nombre Actividad</label>
+					          	</div>
+					          	<div class="col-xs-6">
+					          		<input type="text" class="form-control" id="nombreActividad">
+					          	</div>
+					          	<div class="col-xs-2"></div>
+					          	</div>
+					          </div>
+					          <div class="form-group">
+					          	<div class="row">
+					          		<div class="col-xs-4">
+					          			<label for="fechaActividad" class="control-label">Fecha</label>
+					          		</div>
+					          		<div class="col-xs-6">
+					          			<input class="form-control input-sm" type="text" id="fechaActividad">
+					          		</div>
+					          		<div class="col-xs-2"></div>	
+					          	</div>
+					          </div>
+					          <div class="form-group">
+					          	<div class="row">
+					          		<div class="col-xs-4">
+					          			<label for="horaActividad" class="control-label">Hora</label>
+					          		</div>
+					          		<div class="col-xs-6">
+					          			<input class="form-control input-sm" type="text" id="horaActividad">
+					          		</div>
+					          		<div class="col-xs-2"></div>
+					          	</div>
+					          </div>
+					          <div class="form-group">
+					          	<div class="row">
+					          		<div class="col-xs-4">
+					          			<label for="lugarActividad" class="control-label">Lugar</label>
+					          		</div>
+					          		<div class="col-xs-6">
+					          			<input class="form-control input-sm" type="text" id="lugarActividad">
+					          		</div>
+					          		<div class="col-xs-2"></div>
+					          	</div>
+					          </div>
+					          <div class="form-group">
+					          	<div class="row">
+					          		<div class="col-xs-4">
+					          			<label for="imagenActividad" class="control-label">Imagen</label>
+					          		</div>
+					          		<div class="col-xs-6">
+					          			<input type="file">
+					          		</div>
+					          		<div class="col-xs-2"></div>
+					          	</div>
+					          </div>
+					          <div class="form-group">
+					          	<div class="row">
+					          	<div class="col-xs-12">
+					          		<label for="descripcionActividad" class="control-label">Descripción Producto</label>
+					            <textarea class="form-control" id="descripcionActividad" placeholder="Todo lo relacionado con la actividad"></textarea>
+					          	</div>
+					          	</div>
+					          </div>
+					        </form>
+					      </div>
+					      <div class="modal-footer">
+					      	<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        					<button type="button" class="btn btn-primary" data-dismiss="modal" onclick = "crearActividad();">Guardar Producto</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+
+
+
+
+		</section>
+		<footer>
+	  		<h4>(c) Iglesia de Dios Pentecostés del Rey De reyes</h4>
+		</footer>
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/modelo.js"></script>
+		<script type="text/javascript" src="js/controlador.js"></script>
+		<script>obtenerParametros();</script>
+	</div>
+</body>
+</html>

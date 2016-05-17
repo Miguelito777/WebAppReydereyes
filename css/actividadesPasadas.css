@@ -1,0 +1,59 @@
+div#contenedor{
+	margin-top: 75px;
+	margin-left: 12%;
+	width: 80%;
+	border: 2px dashed grey;
+}
+div#registro{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+div.fechaA{
+	float: left;
+	width: 20%;
+	height: 30px;
+}
+div.lugar{
+	float: left;
+	width: 20%;
+	height: 30%;
+	margin-top: 30px;
+}
+div#lugar{
+	margin-left: 40px;
+}
+div#fecha{
+	margin-left: 40px;
+}
+
+
+
+
+div.fechaA{
+	float: left;
+	width: 20%;
+	height: 30px;
+}
+div.lugar{
+	float: left;
+	width: 20%;
+	height: 30%;
+	margin-top: 30px;
+}
+div#lugar{
+	margin-left: 40px;
+}
+div#fecha{
+	margin-left: 40px;
+}
+div.divVerTabla{
+	margin-top: 30px;
+	width: 100%;
+	height: 200px;
+	border: 1px solid grey;
+}
+button#inventarioGuardar{
+	margin-left: 45%;
+	margin-top: 60px;
+}
