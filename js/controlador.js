@@ -79,3 +79,30 @@ function setBusquedaActividades(){
 		$("#tablaActFuturas").append("<tr><td>"+iglesia.actividadesTodas[i].nombre+"</td><td>"+iglesia.actividadesTodas[i].fecha+"</td><td>"+iglesia.actividadesTodas[i].lugar+"</td><td>"+iglesia.actividadesTodas[i].hora+"</td><td>"+iglesia.actividadesTodas[i].descripcion+"</td><td><button type='button' class='btn btn-link' id="+i+" data-toggle='modal' data-target='#updateProducto' onclick = 'updateActividad(this.id)'>modificar</button></td><td><button type='button' class='btn btn-link' id="+i+" onclick = 'deleteActividad(this.id)'>Borrar</button></td></tr>");
 	}
 }
+
+
+/**
+* Sección que interactua con la parte del cliente del sistema
+*/
+
+
+function datosIndex(){
+	iglesia.cargarIglesia();
+	iglesia.datosColumnas();
+}
+
+function mostrarDatosIndex(){
+	if (document.getElementById("gracia") == undefined) {
+		$("#datosInicio").append("<table class='table table-hover' id='tablaDatosInicio'><tr><th>Gracia</th><th>Fe</th><th>Mision</th><th>Editar</th></tr></table>")
+		$("#tablaDatosInicio").append("<tr><td>"+iglesia.datosIndex.gracia+"</td><td>"+iglesia.datosIndex.fe+"</td><td>"+iglesia.datosIndex.mision+"</td><td><button type='button' class='btn btn-link' onclick='editarDatosInicio()'>Editar</button></td></tr>");
+	}
+	else{
+		document.getElementById("gracia").innerHTML = "<p class='lead'>"+iglesia.datosIndex.gracia+"</p>";
+		document.getElementById("fe").innerHTML = "<p class='lead'>"+iglesia.datosIndex.fe+"</p>";
+		document.getElementById("mision").innerHTML = "<p class='lead'>"+iglesia.datosIndex.mision+"</p>";
+	}
+}
+
+function editarDatosInicio(){
+	alert("Aqui te quedaste Miguelito, en ontro momento seguis");
+}
