@@ -4,8 +4,32 @@
 function Iglesia (){
 	this.actividadesTodas = [];
 	this.actividadespasadas = [];
-
+	this.datosIndex = {};
 }
+Iglesia.prototype.cargarIglesia = function(){
+	$.ajax({
+		data : {"cargarIglesia" : true},
+		url : "controlador.php",
+		type : "GET",
+		success : function(data){
+			console.log(data);
+		}
+	})
+}
+
+Iglesia.prototype.datosColumnas = function(){
+	_this = this;
+	$.ajax({
+		data : {"datosColumnas" : true},
+		type : "GET",
+		url : "controlador.php",
+		success : function(data){
+			_this.datosIndex = $.parseJSON(data);
+			mostrarDatosIndex();
+		}
+	})
+}
+
 Iglesia.prototype.getActividadesFuturas = function(){
 	_this = this;
 	$.ajax({
