@@ -3,52 +3,77 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Niños</title>
-	<link rel="stylesheet" href="css/ninios.css"type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/jquery.booklet.latest.css">
 </head>
 <body>
-	<div id="contenedor">
-		<header>
-			<div id="titulo">
-				<div class="apartados">
-					<div id="logo">
-					</div>
-				</div>
-				<div class="apartados">
-					<h1>Ministerio de Niños</h1>
-				</div>
-				<div class="apartados">
-					<h3>Rey De Reyes</h3>
-					<div style="clear:both;"></div>
-					 <h4>Totonicapan,Guatemala</h4> 
-				</div>
-				</div>
-			</div>
-			<div style="clear:both;"></div>
-			<nav id="boton">
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="enVivo.html">En Vivo</a></li>
 
-					<li>Ministerios
-						<ul>
-							<li><a href="ninios.html">Niños</a></li>
-							<li><a href="adolescentes.html">Adolecentes</a></li>
-							<li><a href="jovenes.html">Jóvenes</a></li>
-							<li><a href="damas.html">Damas</a></li>
-						</ul>
-					</li>
-					<li><a href="recursos.html">Recursos</a></li>
-					<li><a href="contactos.html">Contactos</a></li>
-				</ul>
-			</nav>
-			</header>
-			<div style="clear:both;"></div>
-			<section>
-				<div id="corousel"></div>
-		</section>
-		<footer>
-			(c)Rey de Reyes
-		</footer>
+	<header>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ministerios</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="ninios.html">Niños</a><br>
+                        <a class="dropdown-item" href="#">Adolescentes</a><br>
+                        <a class="dropdown-item" href="#">Jóvenes</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Adultos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">En vivo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="recursos.html">Recursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="contactanos.html">Contactanos</a>
+                </li>
+            </ul>
+        </div>
+	</header>
+	<br>
+	<section>
+	<div class="container">
+		<div id="actividadesNinos">
+			<div id="portada">
+				<h2>Ministerio de Niños</h2>
+				<h3>Iglesia Rey de reyes</h3>
+				<p>A continuacion encontrara los recuerdos vividos en el ministerio de ninios</p>
+			</div>		
+			<div>
+				<h3>Ninios</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusamus, cupiditate totam dolores dignissimos ut accusantium placeat nemo aperiam laboriosam, iste repudiandae eligendi eum libero explicabo rem optio perferendis ab.</p>
+			</div>
+			<div>
+				<h3>Ninios</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusamus, cupiditate totam dolores dignissimos ut accusantium placeat nemo aperiam laboriosam, iste repudiandae eligendi eum libero explicabo rem optio perferendis ab.</p>
+			</div>
+			<div>
+				<h3>Ninios</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusamus, cupiditate totam dolores dignissimos ut accusantium placeat nemo aperiam laboriosam, iste repudiandae eligendi eum libero explicabo rem optio perferendis ab.</p>
+			</div>
+			<div id="contra">
+				<h3>Ninios</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusamus, cupiditate totam dolores dignissimos ut accusantium placeat nemo aperiam laboriosam, iste repudiandae eligendi eum libero explicabo rem optio perferendis ab.</p>
+			</div>
+		</div>
 	</div>
+	</section>
+	<footer></footer>
+
+	
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.booklet.latest.min.js"></script>
+	<script type="text/javascript" src="js/modelo.js"></script>
+	<script type="text/javascript" src="js/controlador.js"></script>
+	<script>init();</script>
 </body>
 </html>
