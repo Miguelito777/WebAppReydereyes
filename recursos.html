@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Recursos</title>
+	<title>Recursos </title>
 	<link rel="stylesheet" href="css/recursos.css"type="text/css">
 	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css"type="text/css">
-	
+	<div class="span6 fondo-color">
+
 </head>
 <body>
 	<div id="contenedor"></div>
@@ -18,7 +19,7 @@
 					</div>
 				</div>
 				<div class="apartados">
-					<h1>Recursos</h1>
+					<h1>RECURSOS</h1>
 				</div>
 				<div class="apartados">
 					<h2>Rey De Reyes</h2>
@@ -26,23 +27,28 @@
 					<h4>Totonicapán, Guatemala</h4>
 				</div>
 		</div>
-		<nav id="boton">
+			<nav id="boton">
 				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="enVivo.html">En Vivo</a></li>
+					<button type="button" class="btn btn-default.html">Inicio</button>
+					<button type="button" class="btn btn-default.html">En Vivo</button>
+					
+					<button type="button" class="btn btn-default.html">Ministerios</button>			
 
-					<li> Ministerio
-						<ul>
-							<li><a href="ninios.html">Niños</a></li>
-							<li><a href="adolescentes.html">Adolecentes</a></li>
-							<li><a href="jovenes.html">Jóvenes</a></li>
-							<li><a href="damas.html">Damas</a></li>
-						</ul>
-					</li>
-					<li><a href="recursos.html">Recursos</a></li>
-					<li><a href="contactos.html">Contactos</a></li>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+ 						<li role="presentation" class="dropdown-header">Título de sección #1</li>
+					 	 ...
+						 <li role="presentation" class="divider"></li>
+ 					 	<li role="presentation" class="dropdown-header">Título de sección #2</li>
+						  	...
+					</ul>
+
+
+					<button type="button" class="btn btn-default.html">Recursos</button>
+					<button type="button" class="btn btn-default.html">Contactanos</button>
+
 				</ul>
-		</nav>
+			</nav>
+
 			<div style="clear:both;"></div>
 
 			<ul class="nav nav-tabs" role="tablist" id="myTab">
@@ -50,13 +56,13 @@
         			<a href="#tareas" aria-controls="tareas" role="tab" data-toggle="tab">PDF</a>
         		</li>
         		<li role="presentation">
-        			<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Documentos</a>
+        			<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">DOCUMENTOS</a>
         		</li>
         		<li role="presentation">
-        			<a href="#documentos" aria-controls="documentos" role="tab" data-toggle="tab">Audio</a>
+        			<a href="#documentos" aria-controls="documentos" role="tab" data-toggle="tab">AUDIOS</a>
         		</li>
         		<li role="presentation">
-        			<a href="#examenesBimestrales" aria-controls="examenesBimestrales" role="tab" data-toggle="tab">Videos</a>
+        			<a href="#examenesBimestrales" aria-controls="examenesBimestrales" role="tab" data-toggle="tab">VIDEOS</a>
         		</li>
     		</ul>
 		    <div class="tab-content">
@@ -68,7 +74,7 @@
 
 	</header>
 	<footer>
-		<h4>(c)Rey De Reyes</h4>
+		<h3>(c)Rey De Reyes</h3>
 	</footer>
 	<script>
 	$(function(){ 
