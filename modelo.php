@@ -7,7 +7,7 @@ class Conexion
 	public $conexion;
 	function __construct()
 	{
-		$this->conexion = mysqli_connect("192.168.43.140", "root", "", "iglesiareydereyes");
+		$this->conexion = mysqli_connect("localhost", "root", "Jesus8", "iglesiareydereyes");
 	}
 }
 
@@ -28,7 +28,9 @@ class Iglesia extends Conexion
 			echo "Error al conectar al servidor de Bases de Datos";
 		else{
 			$query = "call getInformacion()";
-			$informacion = $this->conexion->query($query);
+			if (!$informacion = $this->conexion->query($query)) {
+				printf(" Error %s\n", $this->conexion->error);
+			}
 			while ($info = $informacion->fetch_assoc()) {
 				$datosInformacion = array();
 				foreach ($info as $key => $value) {
