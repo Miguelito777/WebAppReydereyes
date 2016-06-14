@@ -18,36 +18,40 @@
 					<div id="logo">
 					</div>
 				</div>
-				<div class="apartados">
+				<div style="text-align:center;="apartados">
 					<h1>RECURSOS</h1>
 				</div>
-				<div class="apartados">
-					<h2>Rey De Reyes</h2>
+				<div style="text-align:center;="apartados">
+					<h3>Rey De Reyes</h3>
 					<div style="clear:both;"></div>
 					<h4>Totonicapán, Guatemala</h4>
 				</div>
-		</div>
-			<nav id="boton">
-				<ul>
-					<button type="button" class="btn btn-default.html">Inicio</button>
-					<button type="button" class="btn btn-default.html">En Vivo</button>
-					
-					<button type="button" class="btn btn-default.html">Ministerios</button>			
-
-					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
- 						<li role="presentation" class="dropdown-header">Título de sección #1</li>
-					 	 ...
-						 <li role="presentation" class="divider"></li>
- 					 	<li role="presentation" class="dropdown-header">Título de sección #2</li>
-						  	...
-					</ul>
-
-
-					<button type="button" class="btn btn-default.html">Recursos</button>
-					<button type="button" class="btn btn-default.html">Contactanos</button>
-
-				</ul>
-			</nav>
+		<div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ministerios</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="ninios.html">Niños</a><br>
+                        <a class="dropdown-item" href="#">Adolescentes</a><br>
+                        <a class="dropdown-item" href="#">Jóvenes</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Adultos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">En vivo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="recursos.html">Recursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="contactanos.html">Contactanos</a>
+                </li>
+            </ul>
+        </div>
 
 			<div style="clear:both;"></div>
 
@@ -73,9 +77,10 @@
 		    </div>
 
 	</header>
-	<footer>
-		<h3>(c)Rey De Reyes</h3>
-	</footer>
+	</section>
+	<footer style="text-align:center;">
+        <h5>(c) Iglesia Rey de reyes, Totonicapán, Zona 1</h5>
+    </footer>
 	<script>
 	$(function(){ 
 		$('#myTab a:last').tab('show')
