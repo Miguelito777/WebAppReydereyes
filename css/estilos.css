@@ -1,0 +1,6 @@
+div#portada, div#contra{
+	text-align: center;
+	background-color: yellow;
+	padding: 20px;
+	height: 560px;
+}
