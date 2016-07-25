@@ -4,3 +4,7 @@ div#portada, div#contra{
 	padding: 20px;
 	height: 560px;
 }
+
+div.contenido{
+	padding: 30px;
+}

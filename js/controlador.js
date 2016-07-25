@@ -109,19 +109,18 @@ function editarDatosInicio(){
 
 
 /**
-* Funcion para crear un libro
+* Funcion para crear un libro de la página de niños
 */
 function init(){
+	
 	$("#actividadesNinos").booklet(
 	{
-		width:800,
-		height:500,
-
-		closed:true,
-		covers:true,
-		autoCenter:true,
-		pagePadding:0,
-		hoverWidth:100,	
+		width:1000,
+		height:550,
+		
+		
 	}
+
+		
 	);
 }
