@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Recursos</title>
-	<link rel="stylesheet" href="css/recursos.css"type="text/css">
-	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css"type="text/css">
-	
+	<title>Recursos </title>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="css/recursos.css" type="text/css">
+	<div class="span6 fondo-color">
+
 </head>
 <body>
 	<div id="contenedor"></div>
@@ -17,59 +16,87 @@
 					<div id="logo">
 					</div>
 				</div>
-				<div class="apartados">
-					<h1>Recursos</h1>
+				<div style="text-align:center;="apartados">
+					<h1>RECURSOS</h1>
 				</div>
-				<div class="apartados">
-					<h2>Rey De Reyes</h2>
+				<div style="text-align:center;="apartados">
+					<h3>Iglesia Rey De reyes</h3>
 					<div style="clear:both;"></div>
 					<h4>Totonicapán, Guatemala</h4>
 				</div>
-		</div>
-		<nav id="boton">
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="enVivo.html">En Vivo</a></li>
-
-					<li> Ministerio
-						<ul>
-							<li><a href="ninios.html">Niños</a></li>
-							<li><a href="adolescentes.html">Adolecentes</a></li>
-							<li><a href="jovenes.html">Jóvenes</a></li>
-							<li><a href="damas.html">Damas</a></li>
-						</ul>
-					</li>
-					<li><a href="recursos.html">Recursos</a></li>
-					<li><a href="contactos.html">Contactos</a></li>
-				</ul>
-		</nav>
+		<div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ministerios</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="ninios.html">Niños</a><br>
+                        <a class="dropdown-item" href="#">Adolescentes</a><br>
+                        <a class="dropdown-item" href="#">Jóvenes</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Adultos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">En vivo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="recursos.html">Recursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="contactanos.html">Contactanos</a>
+                </li>
+            </ul>
+        </div>
+		<div class="container">
 			<div style="clear:both;"></div>
 
 			<ul class="nav nav-tabs" role="tablist" id="myTab">
         		<li role="presentation" class="active">
-        			<a href="#tareas" aria-controls="tareas" role="tab" data-toggle="tab">PDF</a>
+        			<a href="#tareas" aria-controls="tareas" role="tab" data-toggle="tab" >PDF</a> 
         		</li>
         		<li role="presentation">
-        			<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Documentos</a>
+        			<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">DOCUMENTOS</a>
+ 
         		</li>
         		<li role="presentation">
-        			<a href="#documentos" aria-controls="documentos" role="tab" data-toggle="tab">Audio</a>
+        			<a href="#documentos" aria-controls="documentos" role="tab" data-toggle="tab">AUDIOS</a>
+       
         		</li>
         		<li role="presentation">
-        			<a href="#examenesBimestrales" aria-controls="examenesBimestrales" role="tab" data-toggle="tab">Videos</a>
+        			<a href="#examenesBimestrales" aria-controls="examenesBimestrales" role="tab" data-toggle="tab">VIDEOS</a>
         		</li>
-    		</ul>
+			</ul>
+		
 		    <div class="tab-content">
-		        <div role="tabpanel" class="tab-pane active" id="tareas"></div>
-		        <div role="tabpanel" class="tab-pane" id="messages"></div>
-		        <div role="tabpanel" class="tab-pane" id="documentos"></div>
-		        <div role="tabpanel" class="tab-pane" id="examenesBimestrales"></div>
+		        <div role="tabpanel" class="tab-pane active" id="tareas">
+		        	<h1>AQUI VAN LOS PDF</h1>
+		        	
+		        </div>
+		        <div role="tabpanel" class="tab-pane" id="messages">
+		        	<h1>AQUI VAN LOS DOCUMENTOS</h1>		        	
+		        </div>
+		        <div role="tabpanel" class="tab-pane" id="documentos">
+		        	<h1>AQUI VAN LOS AUDIOS</h1>
+		        	
+		        </div>
+		        <div role="tabpanel" class="tab-pane" id="examenesBimestrales">
+		        	<h1>AQUI VAN LOS VIDEOS</h1>
+		        	
+		        </div>
 		    </div>
-
+			
+		</div>
 	</header>
-	<footer>
-		<h4>(c)Rey De Reyes</h4>
-	</footer>
+	</section>
+	<footer style="text-align:center;">
+        <h5>(c) Iglesia Rey de reyes, Totonicapán, Zona 1</h5>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script>
 	$(function(){ 
 		$('#myTab a:last').tab('show')

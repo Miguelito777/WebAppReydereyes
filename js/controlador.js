@@ -106,3 +106,21 @@ function mostrarDatosIndex(){
 function editarDatosInicio(){
 	alert("Aqui te quedaste Miguelito, en ontro momento seguis");
 }
+
+
+/**
+* Funcion para crear un libro de la página de niños
+*/
+function init(){
+	
+	$("#actividadesNinos").booklet(
+	{
+		width:1000,
+		height:550,
+		
+		
+	}
+
+		
+	);
+}
