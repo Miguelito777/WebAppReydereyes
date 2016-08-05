@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html dir="ltr" lang="en-US" class="no-js ie ie6 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 7 ]><html dir="ltr" lang="en-US" class="no-js ie ie7 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en-US" class="no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en-US" class="no-js ie ie9 lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="js canvas fontface generatedcontent wf-proximanova-n4-active wf-proximanova-n7-active wf-proximanova-i7-inactive wf-proximanova-i4-inactive wf-brandongrotesque-n7-inactive wf-active" dir="ltr" lang="en-US"><!--<![endif]--><head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/PYpdCoAgDIAvpEzpRHOOlNQNJ0S3j3zo8fuJcKu32rWxTyJXHacnbDwyTiAz.css" media="all">
+ 
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Circular Content Carousel with jQuery</title>
+				<link rel="stylesheet" type="text/css" href="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/main.css">
+		<link rel="stylesheet" type="text/css" media="print" href="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/main_print.css">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		
+		<script async="" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/cbgapi.loaded_0"></script><script src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/ga.js" async="" type="text/javascript"></script><script src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/fbds.js" async=""></script><script src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/pdd7wbw.js"></script>
+		<style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-brandon-grotesque{font-family:"brandon-grotesque",sans-serif;}</style><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://fonts.typekit.net/af/590c05/00000000000000000001499c/23/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n7) format("woff2");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://fonts.typekit.net/af/1f2c3f/0000000000000000000148a9/23/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=i7) format("woff2");font-weight:700;font-style:italic;}@font-face{font-family:proxima-nova;src:url(https://fonts.typekit.net/af/810327/0000000000000000000148a4/23/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=n4) format("woff2");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://fonts.typekit.net/af/8e5830/0000000000000000000148a5/23/l?primer=fff1a989570eb474b8c22c57cc7199e63bfc7e911b750165d0199218f0b7e7cc&fvd=i4) format("woff2");font-weight:400;font-style:italic;}@font-face{font-family:brandon-grotesque;src:url(https://fonts.typekit.net/af/98e2c6/0000000000000000000132e3/23/l?subset_id=1&fvd=n7) format("woff2");font-weight:700;font-style:normal;}</style><script>try{Typekit.load();}catch(e){}</script>
+		
+		<script>
+			(function(){var e=window._fbq||(window._fbq=[]);if(!e.loaded){var t=document.createElement("script");t.async=true;t.src="//connect.facebook.net/en_US/fbds.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);e.loaded=true}})();window._fbq=window._fbq||[];window._fbq.push(["track","6024769872202",{value:"0.00",currency:"USD"}])
+		</script>
+		<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6024769872202&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+		
+		<link rel="shortcut icon" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-196x196.png" sizes="196x196">
+		<link rel="icon" type="image/png" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-32x32.png" sizes="32x32">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-TileImage" content="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/mstile-144x144.png">
+		<meta name="msapplication-config" content="/codrops/wp-content/themes/codropstheme03/favicons/browserconfig.xml">
+			   
+		
+<!-- This site is optimized with the Yoast SEO plugin v3.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Today we want to share a simple circular content carousel with you. The idea is to have some content boxes that we can slide infinitely (circular). When clicking on the &quot;more&quot; link, the respective item moves to the left and a content area will slide out. Now we can navigate through the carousel where each step will reveal the next or previous content box with its expanded content. Clicking on the closing cross will slide the expanded content area back in and animate the item to its original position.">
+<meta name="robots" content="noodp">
+<link rel="canonical" href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Circular Content Carousel with jQuery">
+<meta property="og:description" content="Today we want to share a simple circular content carousel with you. The idea is to have some content boxes that we can slide infinitely (circular). When clicking on the &quot;more&quot; link, the respective item moves to the left and a content area will slide out. Now we can navigate through the carousel where each step will reveal the next or previous content box with its expanded content. Clicking on the closing cross will slide the expanded content area back in and animate the item to its original position.">
+<meta property="og:url" content="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/">
+<meta property="og:site_name" content="Codrops">
+<meta property="article:publisher" content="https://www.facebook.com/pages/Codrops/159107397912">
+<meta property="article:tag" content="carousel">
+<meta property="article:tag" content="circular">
+<meta property="article:tag" content="content slider">
+<meta property="article:tag" content="CSS3">
+<meta property="article:tag" content="jQuery">
+<meta property="article:tag" content="slider">
+<meta property="article:section" content="Playground">
+<meta property="article:published_time" content="2011-08-16T18:19:39+02:00">
+<meta property="fb:admins" content="508764091">
+<meta property="og:image" content="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2011/08/CircularContentCarousel.jpg">
+<meta property="og:image:width" content="580">
+<meta property="og:image:height" content="315">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Codrops » Circular Content Carousel with jQuery Comments Feed" href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/tympanus.net\/codrops\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script type="text/javascript" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/wp-emoji-release.js"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+
+
+<script type="text/javascript" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/jYxrCsMwDIMvlDQtO5HrmMRrXrUTxm6_BvpzsIGEQHwSVi-1qXs1ywXT8KTue.js"></script>
+<link rel="https://api.w.org/" href="http://tympanus.net/codrops/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://tympanus.net/codrops/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://tympanus.net/codrops/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.5.3">
+<link rel="shortlink" href="http://tympanus.net/codrops/?p=5478">
+<link rel="alternate" type="application/json+oembed" href="http://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=http%3A%2F%2Ftympanus.net%2Fcodrops%2F2011%2F08%2F16%2Fcircular-content-carousel%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://tympanus.net/codrops/wp-json/oembed/1.0/embed?url=http%3A%2F%2Ftympanus.net%2Fcodrops%2F2011%2F08%2F16%2Fcircular-content-carousel%2F&amp;format=xml">
+		<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-7243260-2']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+		</script>
+
+				<script type="text/javascript" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/modernizr.js"></script>
+		<!--[if lt IE 9 ]>
+			<script type="text/javascript" src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/js/css3-mediaqueries.js"></script>
+			<link rel="stylesheet" href="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/css/ie.css"/>
+		<![endif]-->
+		<!--[if lt IE 8 ]>
+			<script type="text/javascript" src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/js/iconfonts.js"></script>
+		<![endif]-->
+		<noscript>
+			
+		</noscript>
+		<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "WebSite",
+		  "url": "http://tympanus.net/codrops/",
+		  "potentialAction": {
+		    "@type": "SearchAction",
+		    "target": "http://tympanus.net/codrops/?s={search_term_string}",
+		    "query-input": "required name=search_term_string"
+		  }
+		}
+		</script>
+	<script src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/bsa.js" async="" type="text/javascript"></script><script async="async" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/s_af25dfd2f1908889af7a1aa5f4dcbd9e.js" id="_bsap_js_af25dfd2f1908889af7a1aa5f4dcbd9e" type="text/javascript"></script><script id="_bsap_premium_pro" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/pro.js" type="text/javascript"></script><script async="async" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/a.js" id="_bsaPRO_js" type="text/javascript"></script></head>
+	<body id="codrops-body">
+				<!-- BuySellAds.com Ad Code -->
+		<script type="text/javascript">
+			(function(){
+				var bsa = document.createElement('script');
+				bsa.type = 'text/javascript';
+				bsa.async = true;
+				bsa.src = '//s3.buysellads.com/ac/bsa.js';
+				(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+			})();
+		</script>
+		<!-- END BuySellAds.com Ad Code -->	
+				<div class="ct-container">
+			<header class="ct-header">
+				<div class="ct-inner ct-cf">
+
+											<div class="ct-branding">
+							<a class="ct-logo" href="http://tympanus.net/codrops" rel="home">Codrops</a>
+						</div>
+					
+					<div class="ct-nav-wrapper">
+						<nav class="ct-nav-main">
+						   <ul>
+								<li><a href="http://tympanus.net/codrops/category/tutorials/">Tutorials</a></li>
+								<li><a href="http://tympanus.net/codrops/category/playground/">Playground</a></li>
+								<li><a href="http://tympanus.net/codrops/category/blueprints/">Blueprints</a></li>
+								<li><a href="http://tympanus.net/codrops/collective/">Collective</a></li>
+								<li><a href="http://tympanus.net/codrops/css_reference/">CSS Reference</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="ct-header-items-right ct-cf">
+						<div class="ct-search" id="ct-search">
+							<form method="get" id="searchform" action="http://tympanus.net/codrops/">
+								<div class="ct-search-input-wrap">
+									<span style="position: relative; display: inline-block;" class="twitter-typeahead"><input style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="tt-hint" autocomplete="off" spellcheck="off" disabled="disabled" type="text"><input dir="auto" style="position: relative; vertical-align: top; background-color: transparent;" spellcheck="false" autocomplete="off" class="ct-search-input tt-query" placeholder="Search on Codrops..." name="s" id="s" type="text"><span style="position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: &quot;proxima-nova&quot;,&quot;Proxima Nova&quot;,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 700; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></span><span style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;" class="tt-dropdown-menu"></span></span>
+								</div>
+								<input name="search-type" value="posts" type="hidden">
+								<input class="ct-search-submit" id="go" value="" type="submit"><span class="ct-icon-search"></span>
+							</form>
+						</div>
+						<ul class="ct-connect">
+							<li><a class="ct-icon-feed" href="http://feeds2.feedburner.com/tympanus"><span>Rss Feed</span></a></li>
+							<li><a class="ct-icon-mail" href="http://feedburner.google.com/fb/a/mailverify?uri=tympanus&amp;loc=en_US"><span>Email Updates</span></a></li>
+							<li><a class="ct-icon-twitter" href="http://www.twitter.com/codrops"><span>Codrops on Twitter</span></a></li>
+							<li><a class="ct-icon-facebook" href="http://www.facebook.com/pages/Codrops/159107397912"><span>Codrops on Facebook</span></a></li>
+							<li><a class="ct-icon-google-plus" href="https://plus.google.com/101095823814290637419" rel="publisher"><span>Codrops on Google+</span></a></li>
+						    <li><a class="ct-icon-github" href="https://github.com/codrops"><span>Codrops on Github</span></a></li>
+						</ul>
+					</div><!--/ct-header-items-right-->
+
+				</div><!-- ct-inner -->
+			</header><div class="ct-content">
+    <div class="ct-inner">		
+		
+								<div class="ct-main ct-main-post" id="ct-main" role="main">
+					<div class="ct-post">
+						<article id="post-5478" class="post-5478 post type-post status-publish format-standard has-post-thumbnail hentry category-playground tag-carousel tag-circular tag-content-slider tag-css3 tag-jquery tag-slider">
+							<header>
+								<div class="ct-subline entry-meta ">
+																				<img alt="" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/1b17d4931f914ee75c7f5e5dc7b17734_002.jpeg" srcset="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=72&amp;d=identicon&amp;r=g 2x" class="avatar avatar-36 photo" height="36" width="36">																		<div class="ct-subline__author">
+																					<span class="byline author vcard"><a href="http://tympanus.net/codrops/author/crnacura/" title="Posts by Mary Lou" rel="author">Mary Lou</a></span>
+											in 
+																				<a href="http://tympanus.net/codrops/category/playground/">Playground</a>
+									</div>
+									<div class="ct-subline__time">
+										<time class="ct-subline__pubtime" pubdate="pubdate">2011/08/16</time> 
+										<a href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/#comments">151 Comments</a>																			</div>
+																	</div>
+								<h1 class="ct-h-shd entry-title">
+									Circular Content Carousel with jQuery																	</h1>
+							</header>		
+							<div class="ct-post-content">
+								<div class="ct-post-excerpt">Today we want to share a simple 
+circular content carousel with you. The idea is to have some content 
+boxes that we can slide infinitely (circular). When clicking on the 
+"more" link, the respective item moves to the left and a content area 
+will slide out. Now we can navigate through the carousel where each step
+ will reveal the next or previous content box with its expanded content.
+ Clicking on the closing cross will slide the expanded content area back
+ in and animate the item to its original posi</div>								<div class="ct-ad-article-wrapper">
+										<div class="ct-ad-article">
+																						<img class="ct-ad-img" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/advertisement.jpg">
+												
+											<div data-serve="CKYDK5T" id="bsap_1277316" class="bsap bsap_1277316">
+<style type="text/css">
+div.bsap_1277316{width:100%;display:block;}div.bsap_1277316 a{width:728px;}div.bsap_1277316 a img{padding:0;}div.bsap_1277316 a em{font-style:normal;}div.bsap_1277316 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;float:left;}
+div.bsap_1277316 img{border:0;clear:right;}
+div.bsap_1277316 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}
+div.bsap_1277316 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}div.bsap_1277316 a{line-height:100%;}div.bsap_1277316 a.adhere{width:728px;height:90px;line-height:720%;}html>body div.bsap_1277316 a.adhere{width:726px;height:88px;}div.bsap_1277316 img.s{height:0;width:0;}div.bsap_1277316{line-height:9px;}div.bsap_1277316 .bsap_adhere2,div.bsap_1277316 iframe{float:left;}div.bsap_1277316 .bsap_adhere2 a{height:90px;width:20px;background:url(http:\/\/s3.buysellads.com\/ac\/ah20x90_1.gif) no-repeat 0 0;text-indent:-9999px;}
+</style>
+<a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFTA4YKQWCAYDC23YCV7D6Z3JCESITKJYCE7I4K3KC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad0 odd " title="Segment" id="bsa_6894463" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/6871123-1467813337.png" alt="" height="90" width="728"></a>
+<script class="ignoreme" id="auto_1" type="text/javascript"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+										</div>
+									</div>
+								
+								<p><a href="http://tympanus.net/Development/CircularContentCarousel/" target="_blank"><img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/CircularContentCarousel.jpg" alt="" title="CircularContentCarousel" class="aligncenter size-full wp-image-5487" height="315" width="580"></a><br>
+<a class="demo" href="http://tympanus.net/Development/CircularContentCarousel/" target="_blank">View demo</a> <a class="download" href="http://tympanus.net/Development/CircularContentCarousel/CircularContentCarousel.zip">Download source</a></p>
+<p>Today we want to share a simple circular content carousel with you. 
+The idea is to have some content boxes that we can slide infinitely 
+(circular). When clicking on the “more” link, the respective item moves 
+to the left and a content area will slide out. Now we can navigate 
+through the carousel where each step will reveal the next or previous 
+content box with its expanded content. Clicking on the closing cross 
+will slide the expanded content area back in and animate the item to its
+ original position.</p>
+<p>The beautiful animal icon set in the ZIP file are by <a href="http://cyberella74.deviantart.com/art/Archigraphs-Animals-Icons-139629985" target="_blank">Cyberella</a> and they are licensed under the <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0) License</a>.</p>
+<div class="ct-ad-article-wrapper ct-ad-article-wrapper-in"><div class="ct-ad-article"><img class="ct-ad-img" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/advertisement.jpg"><div data-serve="CKYDK5V" id="bsap_1279993" class="bsap bsap_1279993"><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFTALYKQWCAYDC23YCVBDEZ3JCESITKJYCAAD627KC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad0 odd " title="Responsive design. Advanced site personalization. API access. Fully Editable. Free Trial." id="bsa_6927450" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/6896859-1470157589.jpg" alt="" height="90" width="728"></a>
+<script class="ignoreme" id="auto_2" type="text/javascript"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div><div style="clear:both;"></div></div></div>
+<h3>The HTML Structure</h3>
+<p>The structure consists of a main container and a wrapper for the items. Each item contains </p>
+<pre class="brush:xml hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ca-container"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-container"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-wrapper"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-item ca-item-1"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-item-main"</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>Stop factory farming<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-quote"</span>&gt;</span>“<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Some text...<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-more"</span>&gt;</span>more...<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-content-wrapper"</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-content"</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-title">h6</span>&gt;</span>Animals are not commodities<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-close"</span>&gt;</span>close<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-content-text"</span>&gt;</span>
+						<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Some more text...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+					<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+						<span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Read more<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+						<span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Share this<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+						<span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Become a member<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+						<span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Donate<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+					<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ca-item ca-item-2"</span>&gt;</span>
+			...
+		<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+		...
+	<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- ca-wrapper --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!-- ca-container --&gt;</span>	
+</pre>
+<p>The initial view of the content carousel:<br>
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/CircularContentCarousel1.jpg" alt="" title="CircularContentCarousel1" class="aligncenter size-full wp-image-5485" height="252" width="580"></p>
+<p>When we click on “more…”, another content area will slide out and move the respective item to the left:<br>
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/CircularContentCarousel2.jpg" alt="" title="CircularContentCarousel2" class="aligncenter size-full wp-image-5486" height="252" width="580"></p>
+<p>The default options are the following:</p>
+<pre class="brush:js hljs javascript">$(<span class="hljs-string">'#ca-container'</span>).contentcarousel({
+	<span class="hljs-comment">// speed for the sliding animation</span>
+	sliderSpeed		: <span class="hljs-number">500</span>,
+	<span class="hljs-comment">// easing for the sliding animation</span>
+	sliderEasing	: <span class="hljs-string">'easeOutExpo'</span>,
+	<span class="hljs-comment">// speed for the item animation (open / close)</span>
+	itemSpeed		: <span class="hljs-number">500</span>,
+	<span class="hljs-comment">// easing for the item animation (open / close)</span>
+	itemEasing		: <span class="hljs-string">'easeOutExpo'</span>,
+	<span class="hljs-comment">// number of items to scroll at a time</span>
+	scroll			: <span class="hljs-number">1</span>	
+});
+</pre>
+<p>We hope you enjoy this simple carousel and find it useful!</p>
+<p><a class="demo" href="http://tympanus.net/Development/CircularContentCarousel/" target="_blank">View demo</a><a class="download" href="http://tympanus.net/Development/CircularContentCarousel/CircularContentCarousel.zip">Download source</a></p>
+<div class="googlead"><!-- wp_ad_camp_1 --></div>
+								
+																	<div class="ct-post-nav">
+										<div class="ct-post-prev">        
+											<strong>Previous:</strong><br> <a href="http://tympanus.net/codrops/2011/08/09/portfolio-image-navigation/" rel="prev">Portfolio Image Navigation with jQuery</a>  
+										</div>
+										<div class="ct-post-next">
+											<strong>Next:</strong><br> <a href="http://tympanus.net/codrops/2011/08/19/developing-visual-rhythm-in-web-design/" rel="next">Developing Visual Rhythm in Web Design</a>  
+										</div>
+										<div class="clr"></div>
+									</div> <!-- ct-post-nav -->
+																
+							</div>
+						</article>
+						<p class="ct-tags">
+							Tagged with: <a href="http://tympanus.net/codrops/tag/carousel/" rel="tag">carousel</a> <a href="http://tympanus.net/codrops/tag/circular/" rel="tag">circular</a> <a href="http://tympanus.net/codrops/tag/content-slider/" rel="tag">content slider</a> <a href="http://tympanus.net/codrops/tag/css3/" rel="tag">CSS3</a> <a href="http://tympanus.net/codrops/tag/jquery/" rel="tag">jQuery</a> <a href="http://tympanus.net/codrops/tag/slider/" rel="tag">slider</a>						</p>
+						<div class="clr"></div>
+					</div>
+
+											<div class="ct-row">
+							<div class="ct-author-info ct-box">
+								<div class="ct-author-avatar">
+									<img alt="" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/1b17d4931f914ee75c7f5e5dc7b17734.jpeg" srcset="http://1.gravatar.com/avatar/1b17d4931f914ee75c7f5e5dc7b17734?s=160&amp;d=identicon&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">								</div>
+								<div class="ct-author-page-desc">
+									<h4><a href="http://tympanus.net/codrops/author/crnacura/" title="Posts by Mary Lou" rel="author">Mary Lou</a></h4>
+									<p>
+										Mary Lou (Manoela Ilic) is a freelance web designer and 
+developer with a passion for interaction design. She studied Cognitive 
+Science and Computational Logic and has a weakness for the smell of 
+freshly ground peppercorns.									</p>
+									<p class="ct-author-page-url"><strong>View all contributions by <a href="http://tympanus.net/codrops/author/crnacura/" title="Posts by Mary Lou" rel="author">Mary Lou</a></strong></p>
+																		
+																											<p class="ct-author-page-url">
+										<strong>Website: </strong>
+										<a href="http://tympanus.net/" target="_blank">http://tympanus.net/</a>
+									</p>
+																		
+									<div>
+										<ul class="ct-social-profiles">
+										
+																																		<li><a class="ct-social-twitter" href="http://twitter.com/crnacura">http://twitter.com/crnacura<span>Manoela on Twitter</span></a></li>
+																																													<li><a class="ct-social-dribbble" href="http://dribbble.com/crnacura">http://dribbble.com/crnacura<span>Manoela on Dribbble</span></a></li>
+																																		<li><a class="ct-social-facebook" href="http://www.facebook.com/manoela.ilic">http://www.facebook.com/manoela.ilic<span>Manoela on Facebook</span></a></li>
+																																													<li><a class="ct-social-github" href="https://github.com/crnacura">https://github.com/crnacura<span>Manoela on Github</span></a></li>
+																																																																																							</ul>
+									</div>
+								</div>
+								<div class="clr"></div>
+							</div>
+						</div>
+
+						<h2 class="ct-letterpress">Related Articles</h2>
+						<div class="ct-related-post ct-row-float cf">
+							
+									<div class="ct-box">
+										<div class="ct-latest-thumb-related">
+											<a href="http://tympanus.net/codrops/2015/03/31/prism-effect-slider-canvas/">
+												<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/PrismEffectSlider-300x163.jpg" class="attachment-medium size-medium wp-post-image" alt="PrismEffectSlider" srcset="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2015/03/PrismEffectSlider-300x163.jpg 300w, http://tympanus.net/codrops/wp-content/uploads/2015/03/PrismEffectSlider.jpg 580w" sizes="(max-width: 300px) 100vw, 300px" height="163" width="300">											</a>
+										</div>
+										<h3><a href="http://tympanus.net/codrops/2015/03/31/prism-effect-slider-canvas/">Prism Effect Slider with Canvas</a></h3>
+									</div>
+												
+								
+									<div class="ct-box">
+										<div class="ct-latest-thumb-related">
+											<a href="http://tympanus.net/codrops/2015/05/06/photography-website-concept/">
+												<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/PhotographyWebsiteConcept-300x163.jpg" class="attachment-medium size-medium wp-post-image" alt="PhotographyWebsiteConcept" srcset="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2015/05/PhotographyWebsiteConcept-300x163.jpg 300w, http://tympanus.net/codrops/wp-content/uploads/2015/05/PhotographyWebsiteConcept.jpg 580w" sizes="(max-width: 300px) 100vw, 300px" height="163" width="300">											</a>
+										</div>
+										<h3><a href="http://tympanus.net/codrops/2015/05/06/photography-website-concept/">Photography Website Concept</a></h3>
+									</div>
+												
+								
+									<div class="ct-box">
+										<div class="ct-latest-thumb-related">
+											<a href="http://tympanus.net/codrops/2015/07/06/zoom-slider/">
+												<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/BlueprintZoomSlider-300x163.jpg" class="attachment-medium size-medium wp-post-image" alt="BlueprintZoomSlider" srcset="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2015/07/BlueprintZoomSlider-300x163.jpg 300w, http://tympanus.net/codrops/wp-content/uploads/2015/07/BlueprintZoomSlider.jpg 580w" sizes="(max-width: 300px) 100vw, 300px" height="163" width="300">											</a>
+										</div>
+										<h3><a href="http://tympanus.net/codrops/2015/07/06/zoom-slider/">Zoom Slider</a></h3>
+									</div>
+												
+														</div>
+
+						
+										<div class="ct-row-wrapper">
+						<div class="ct-row">
+							
+<div class="ct-sharing ct-box">
+	<h4>Stay connected with us:</h4>
+	<div class="ct-link-list">
+		<a href="http://feeds2.feedburner.com/tympanus" class="ct-link-list-rss">Grab the <strong>RSS Feed</strong></a>
+		<a href="http://feedburner.google.com/fb/a/mailverify?uri=tympanus&amp;loc=en_US" class="ct-link-list-mail">Get <strong>email updates</strong></a>
+		<a href="http://www.twitter.com/codrops" class="ct-link-list-twitter">Follow us on <strong>Twitter</strong></a>
+		<a href="http://www.facebook.com/pages/Codrops/159107397912" class="ct-link-list-fb">Join us on <strong>Facebook</strong></a>
+		<a href="https://plus.google.com/101095823814290637419/?prsrc=3" class="ct-link-list-gplus">Add us on <strong>Google+</strong></a>
+	</div>
+</div>
+							<div class="ct-bottom-ads ct-box">
+								<span class="ct-small-text">Advertisement</span>
+								<!-- BSA Zone Code -->
+								<div data-serve="CKYDK2T" id="bsap_1248599" class="bsap bsap_1248599">
+<style type="text/css">
+div.bsap_1248599{width:100%;display:block;}div.bsap_1248599 a{width:125px;}div.bsap_1248599 a img{padding:0;}div.bsap_1248599 a em{font-style:normal;}div.bsap_1248599 a{display:block;font-size:11px;color:#888;margin:0px 10px 10px 15px;text-align:center;text-decoration:none;overflow:hidden;float:left;}
+div.bsap_1248599 img{border:0;}
+div.bsap_1248599 a.adhere{color: #9DB0C1; text-transform: uppercase; font-size: 10px; border: 1px solid #C8D0E1; text-align: center; background: #D9E3EC; line-height: 1200%;}
+div.bsap_1248599 a.adhere:hover{color: #7E95AA;}div.bsap_1248599 a{line-height:100%;}div.bsap_1248599 a.adhere{width:125px;height:125px;line-height:1000%;}html>body div.bsap_1248599 a.adhere{width:123px;height:123px;}div.bsap_1248599 img.s{height:0;width:0;}
+</style>
+<a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFTB4YKQWCAYDC23YC6YI4Z3JCESITKJYCEBIEKQKC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad0 odd " title="XStore - Responsive WooCommerce Theme" id="bsa_6908346" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/6908346-1469450410.png" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFTB4YKQWCAYDC2QUC67IKZ3JCESITKJWCY7I523KC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad1  even" title="Boost Social Shares, Traffic &amp; Revenue with SociallyViral Theme from MyThemeShop" id="bsa_6409038" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/304703-1450624463.jpg" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFTB4YKQWCAYDC23UCKBIVZ3JCESITKJYCABDK2JKC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad2 odd " title="Best Store Locator Wordpress Plugin - Super Store Finder" id="bsa_6926323" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/6926323-1470104374.jpg" alt="" height="125" width="125"></a>
+<script class="ignoreme" id="auto_3" type="text/javascript"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+								<div class="clr"></div>
+							</div>
+						</div>
+					</div>
+					
+						<section id="comments" class="ct-comments">
+	
+		
+			<div class="ct-commenttitle ct-cf">
+			<h2 id="comments-title">
+				<span>Feedback</span>
+				<sup>151</sup>
+			</h2>
+						<span class="ct-closed-right">Comments are closed.</span>
+					</div>
+		
+				<nav class="ct-commentnav">
+			<a class="prev page-numbers" href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-7/#comments">« Previous</a>
+<a class="page-numbers" href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-1/#comments">1</a>
+<span class="page-numbers dots">…</span>
+<a class="page-numbers" href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-6/#comments">6</a>
+<a class="page-numbers" href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-7/#comments">7</a>
+<span class="page-numbers current">8</span> 
+		</nav>
+		
+		<ol class="ct-commentlist">
+							<li class="comment even thread-even depth-1" id="li-comment-417570">
+					<article id="comment-417570" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt="" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/ab3cc40b2f5eca22e8d98466bd7fb3e9.png" srcset="http://1.gravatar.com/avatar/ab3cc40b2f5eca22e8d98466bd7fb3e9?s=120&amp;d=identicon&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">								</span>
+								<span class="ct-commentauthorname">Leanne</span> <a href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-8/#comment-417570" class="ct-commenttime"><time pubdate="" datetime="2012-03-28T00:40:52+00:00">March 28, 2012 at 00:40</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+
+
+
+
+						<h1>Aqui va el Carroucel </h1>
+
+
+
+
+						<div class="ct-commentnumber">1</div>
+												<div class="ct-commentcontent">
+														<p>I’ve done a quick pause on hover to Arnaud’s autoscroll function..</p>
+<p>/* auto scroll, pause on hover */<br>
+						var autoscroll = setInterval(function() {<br>
+							aux.navigate( 1, $el, $wrapper, settings, cache );<br>
+						},5000);<br>
+						$(this).find(‘div.ca-wrapper’).hover(function(){<br>
+                          autoscroll = clearInterval(autoscroll);<br>
+						}, function(){<br>
+						  var autoscroll = setInterval(function() {<br>
+							aux.navigate( 1, $el, $wrapper, settings, cache );<br>
+						  },5000);<br>
+						});</p>
+						</div>
+
+						<div class="ct-commentreply">
+													</div><!-- .reply -->
+						<div class="ct-commentedit">
+												</div>
+						
+					</article><!-- #comment-## -->
+
+					<ul class="children">
+				<li class="comment odd alt depth-2" id="li-comment-418121">
+					<article id="comment-418121" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt="" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/6d533f3acde7c70e8a129366acfba27e.png" srcset="http://0.gravatar.com/avatar/6d533f3acde7c70e8a129366acfba27e?s=120&amp;d=identicon&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">								</span>
+								<span class="ct-commentauthorname">Max</span> <a href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-8/#comment-418121" class="ct-commenttime"><time pubdate="" datetime="2012-04-10T14:02:48+00:00">April 10, 2012 at 14:02</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						<div class="ct-commentnumber">2</div>
+												<div class="ct-commentcontent">
+														<p>Leanne, nice work! Just change quotes and content in ‘div.ca-wrapper’ to ‘ca-wrapper’</p>
+						</div>
+
+						<div class="ct-commentreply">
+													</div><!-- .reply -->
+						<div class="ct-commentedit">
+												</div>
+						
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+				<li class="comment even depth-2" id="li-comment-418382">
+					<article id="comment-418382" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt="" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/bd455c48818aa3aea72e6d870d76762c.jpeg" srcset="http://2.gravatar.com/avatar/bd455c48818aa3aea72e6d870d76762c?s=120&amp;d=identicon&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">								</span>
+								<span class="ct-commentauthorname">A. Ferreira</span> <a href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-8/#comment-418382" class="ct-commenttime"><time pubdate="" datetime="2012-04-13T20:31:18+00:00">April 13, 2012 at 20:31</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						<div class="ct-commentnumber">3</div>
+												<div class="ct-commentcontent">
+														<p>@Leanne</p>
+<p>You and Arnaud forgot about:<br>
+”<br>
+if( cache.isAnimating ) return false;<br>
+cache.isAnimating	= true;<br>
+”</p>
+<p>If you dont’t put that, the items will duplicates themselves when you
+ click the prev or next buttons while the auto scroll is animating<br>
+—</p>
+<p>setInterval(function() {<br>
+     if( cache.isAnimating ) return false;<br>
+     cache.isAnimating = true;<br>
+     aux.navigate( 1, $el, $wrapper, settings, cache );<br>
+},2000);</p>
+						</div>
+
+						<div class="ct-commentreply">
+													</div><!-- .reply -->
+						<div class="ct-commentedit">
+												</div>
+						
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+				<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-419005">
+					<article id="comment-419005" class="ct-comment">
+						<footer class="comment-meta">
+							<div class="comment-author vcard">
+								<span class="ct-commentthumb">
+									<img alt="" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/8124a557311a6e92f2f566010706d2f6.png" srcset="http://2.gravatar.com/avatar/8124a557311a6e92f2f566010706d2f6?s=120&amp;d=identicon&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">								</span>
+								<span class="ct-commentauthorname">Ogni</span> <a href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-8/#comment-419005" class="ct-commenttime"><time pubdate="" datetime="2012-04-20T19:38:35+00:00">April 20, 2012 at 19:38</time></a>								
+							</div><!-- .comment-author .vcard -->
+						</footer>
+						<div class="ct-commentnumber">4</div>
+												<div class="ct-commentcontent">
+														<p>Hi, I try this but it doesnt´t work at all for me. </p>
+<p>// auto scroll, pause on hover<br>
+var autoscroll = setInterval(function() {<br>
+if( cache.isAnimating ) return false;<br>
+cache.isAnimating = true;<br>
+aux.navigate( 1, $el, $wrapper, settings, cache );<br>
+},4000);</p>
+<p>$(this).find(‘.ca-wrapper’).hover(function(){<br>
+autoscroll = clearInterval(autoscroll);<br>
+}, function(){<br>
+var autoscroll = setInterval(function() {<br>
+aux.navigate( 1, $el, $wrapper, settings, cache );<br>
+},1500);<br>
+});		</p>
+<p>—<br>
+@ A. Ferreira could you please paste your full working code?</p>
+<p>Thanks<br>
+Ogni</p>
+						</div>
+
+						<div class="ct-commentreply">
+													</div><!-- .reply -->
+						<div class="ct-commentedit">
+												</div>
+						
+					</article><!-- #comment-## -->
+
+					</li><!-- #comment-## -->
+		</ol>
+		<p class="ct-small-text fright">
+						<span class="ct-closed-right">Comments are closed.</span>
+					</p>
+				<nav class="ct-commentnav">
+			 <a class="prev page-numbers" href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-7/#comments">« Previous</a>
+<a class="page-numbers" href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-1/#comments">1</a>
+<span class="page-numbers dots">…</span>
+<a class="page-numbers" href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-6/#comments">6</a>
+<a class="page-numbers" href="http://tympanus.net/codrops/2011/08/16/circular-content-carousel/comment-page-7/#comments">7</a>
+<span class="page-numbers current">8</span> 
+		</nav>
+				
+
+
+		<div class="ct-comment-form">	
+				<div class="clr"></div>
+	</div>
+
+</section><!-- #comments -->
+				</div>
+				<aside class="ct-sidebar">		
+	<div class="ct-ads">
+		<div class="ct-ads-info">
+			<h4>Advertisement</h4>
+			<a href="http://tympanus.net/codrops/advertise/" class="ct-advertise-here">
+				<i class="ct-icon-info"></i>
+				<span>Advertise Here</span>
+			</a>
+		</div>
+		<div data-serve="CKYDK2Y" id="bsap_1275127" class="bsap bsap_1275127"><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFTSLYKQWCAYDC23YCEYI6Z3JCESITKJ7FT7D4KJKC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad0 odd " title="Type Nugget: the online typesetting tool that will make all of your online typesetting dreams come true - it's nuggin' sweet!" id="bsa_6861145" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/6861145-1467786355.png" alt="" height="250" width="300"></a>
+
+<div class="bsap_adhere">
+
+<a href="http://www.buysellads.com/buy/detail/17086/zone/1275127?utm_source=site_17086&amp;utm_medium=website&amp;utm_campaign=imagetext&amp;utm_content=zone_1275127" class="">Advertise Here</a>
+
+</div>
+
+
+<script class="ignoreme" id="auto_4" type="text/javascript"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+		<div data-serve="CKYDKKY" id="bsap_1243201" class="bsap bsap_1243201">
+<style type="text/css">
+div.bsap_1243201{width:100%;display:block;}div.bsap_1243201 a{width:125px;}div.bsap_1243201 a img{padding:0;}div.bsap_1243201 a em{font-style:normal;}div.bsap_1243201 a{background: rgba(255, 255, 255, 0.5); padding: 10px;display:block;font-size:11px;color:#888;margin:0 10px 10px 0;text-align:center;text-decoration:none;overflow:hidden;float:left;}
+div.bsap_1243201 img{border:0;}
+div.bsap_1243201 a.adhere{color: #9DB0C1; text-transform: uppercase; font-size: 10px; text-align: center; background: rgba(255,255,255,0.5); line-height: 1200%; width: 125px; height: 125px;}
+div.bsap_1243201 a.adhere:hover{color: #7e95aa;}div.bsap_1243201 a{line-height:100%;}div.bsap_1243201 a.adhere{width:125px;height:125px;line-height:1000%;}html>body div.bsap_1243201 a.adhere{width:123px;height:123px;}div.bsap_1243201 img.s{height:0;width:0;}
+</style>
+<a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFT7LYKQWCAYDCKQ7CVBITZ3JCESITKJMC6ADP2JKC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad0 odd " title="PSD2HTML.com: Responsive HTML5/CSS3" id="bsa_6204558" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/293176-1443799836.jpg" alt="" height="125" width="125"></a><!-- no ad --><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFT7LYKQWCAYDC2QECW7I5Z3JCESITKJNCESICK3KC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad2  even" title="Eventum - Conference &amp; Event WordPress Theme" id="bsa_6127303" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/304526-1450438060.jpg" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFT7LYKQWCAYDC23YCTYD4Z3JCESITKJYCASD52JKC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad3 odd " title="Decor | Responsive Multipupose HTML5 Template" id="bsa_6928644" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/6888017-1470232167.png" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFT7LYKQWCAYDC2QECYAIPZ3JCESITKJNCKBD427KC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad4  even" title="Premium Bootstrap templates" id="bsa_6136210" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/307390-1452515240.jpg" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFT7LYKQWCAYDCKQ7CVBIPZ3JCESITKJMCY7D523KC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad5 odd " title="X Theme" id="bsa_6251072" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/246686-1416079831.png" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFT7LYKQWCAYDCKQ7CVBDEZ3JCESITK7MCA7IV23KC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad6  even" title="Brooklyn for WordPress, what else?" id="bsa_5642467" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/266637-1429324335.jpg" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFT7LYKQWCAYDCKQ7CVBD5Z3JCESITK7LCKSDLK3KC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad7 odd " title="Premium Website Templates &amp; WordPress Themes" id="bsa_562176" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/178447-1373139325.gif" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFT7LYKQWCAYDCKQ7CVBIVZ3JCESITK7LCKSITKJKC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad8  even" title="Premium WordPress Themes" id="bsa_2449843" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/223418-1400702611.jpg" alt="" height="125" width="125"></a><a href="http://srv.buysellads.com/ads/click/x/GTND423UCT7I653JFT7LYKQWCAYDCKQ7CVBI4Z3JCESITK7ICWADVKQKC6BD5K3ICVSDVK3EHJNCLSIZ" class="ad9 odd " title="GoJS is a fast and powerful JavaScript library for implementing interactive diagrams in web applications. " id="bsa_5931865" target="_blank" rel="nofollow">
+<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/276420-1435762963.png" alt="" height="125" width="125"></a>
+
+<a href="http://www.buysellads.com/buy/detail/17086/zone/1243201?utm_source=site_17086&amp;utm_medium=website&amp;utm_campaign=imagetext&amp;utm_content=zone_1243201" class="adhere">Advertise Here</a>
+
+
+<script class="ignoreme" id="auto_5" type="text/javascript"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+		<div class="clr"></div>
+	</div>
+		
+	<div class="ct-widget-wrapper"> 
+
+				<div class="ct-widget ct-widget-deals">
+		    <h5>Check out our deals &amp; offers!</h5>
+		    <article>
+		        <div class="ct-latest-thumb">
+		            <a href="http://tympanus.net/codrops/deals/">
+		                <img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/gifticon.png" alt="Deals Thumbnail">
+		            </a>
+		        </div>
+		        <p><strong>Find great discounts for many useful services and resources on our <a href="http://tympanus.net/codrops/deals/">Deals &amp; Offers</a> page!</strong></p>
+		        <div class="clr"></div>
+		    </article>
+		</div>
+		
+
+									<div class="ct-widget ct-widget-coll">
+					<h5>Latest News:</h5>
+					                <article id="post-27632" class="post-27632 collective type-collective status-publish has-post-thumbnail hentry">
+					<h3><a href="http://tympanus.net/codrops/collective/collective/" class="">Collective #234</a></h3>
+                    <div class="ct-latest-thumb">
+                        <a href="http://tympanus.net/codrops/collective/collective/" class="ct-trans">
+                            <img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/Cover_Collective_234.png" class="attachment-collective-thumb size-collective-thumb wp-post-image" alt="Cover_Collective_234" height="259" width="200">                        </a>
+                    </div>
+					
+                    <p class="ct-feat-excerpt">
+                       Monograph * Beating Heart * Dummi.io * High Performance SVGs * lightgallery.js * PNG optimisation...
+                    </p>
+                    <div class="clr"></div>
+                </article>
+                            <article id="post-27607" class="post-27607 collective type-collective status-publish has-post-thumbnail hentry">
+					<h3><a href="http://tympanus.net/codrops/collective/collective-233/" class="">Collective #233</a></h3>
+                    <div class="ct-latest-thumb">
+                        <a href="http://tympanus.net/codrops/collective/collective-233/" class="ct-trans">
+                            <img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/Cover_Collective_233.png" class="attachment-collective-thumb size-collective-thumb wp-post-image" alt="Cover_Collective_233" height="259" width="200">                        </a>
+                    </div>
+					
+                    <p class="ct-feat-excerpt">
+                       AppSpotr * Accordion * Fake it 'til you Make it CSS * CSS Reflections * Angled Edges * box.js...
+                    </p>
+                    <div class="clr"></div>
+                </article>
+            				</div>
+									<div class="clr"></div>
+			
+		
+		<div class="ct-widget ct-widget-default">
+			<h5>Hot on Codrops:</h5>
+			                <article id="post-27094" class="post-27094 post type-post status-publish format-standard has-post-thumbnail hentry category-playground tag-3d tag-grid tag-isometric tag-masonry tag-perspective">
+					
+                    <div class="ct-latest-thumb">
+                        <a href="http://tympanus.net/codrops/2016/05/25/isometric-and-3d-grids/" class="ct-trans">
+                            <img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/IsometricGrids_Featured-105x105.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="IsometricGrids_Featured" height="105" width="105">                        </a>
+                    </div>
+					<h3><a href="http://tympanus.net/codrops/2016/05/25/isometric-and-3d-grids/" class="">Isometric and 3D Grids</a></h3>
+                   
+                    <div class="clr"></div>
+                </article>
+                            <article id="post-26866" class="post-26866 post type-post status-publish format-standard has-post-thumbnail hentry category-playground tag-button tag-distorted tag-effect tag-filter tag-svg">
+					
+                    <div class="ct-latest-thumb">
+                        <a href="http://tympanus.net/codrops/2016/05/11/distorted-button-effects-with-svg-filters/" class="ct-trans">
+                            <img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/DistortedButtonEffects_Featured-105x105.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="DistortedButtonEffects_Featured" height="105" width="105">                        </a>
+                    </div>
+					<h3><a href="http://tympanus.net/codrops/2016/05/11/distorted-button-effects-with-svg-filters/" class="">Distorted Button Effects with SVG Filters</a></h3>
+                   
+                    <div class="clr"></div>
+                </article>
+                            <article id="post-26950" class="post-26950 post type-post status-publish format-standard has-post-thumbnail hentry category-tutorials tag-animation tag-heat tag-shader tag-svg tag-webgl">
+					
+                    <div class="ct-latest-thumb">
+                        <a href="http://tympanus.net/codrops/2016/05/03/animated-heat-distortion-effects-webgl/" class="ct-trans">
+                            <img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/DistortionEffect_Featured-105x105.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="DistortionEffect_Featured" height="105" width="105">                        </a>
+                    </div>
+					<h3><a href="http://tympanus.net/codrops/2016/05/03/animated-heat-distortion-effects-webgl/" class="">Animated Heat Distortion Effects with WebGL</a></h3>
+                   
+                    <div class="clr"></div>
+                </article>
+                            <article id="post-25885" class="post-25885 post type-post status-publish format-standard has-post-thumbnail hentry category-playground tag-3d tag-perspective tag-preview tag-room">
+					
+                    <div class="ct-latest-thumb">
+                        <a href="http://tympanus.net/codrops/2016/01/12/cinema-seat-preview-experiment/" class="ct-trans">
+                            <img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/CinemaSeatPreviewExperiment-105x105.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="CinemaSeatPreviewExperiment" height="105" width="105">                        </a>
+                    </div>
+					<h3><a href="http://tympanus.net/codrops/2016/01/12/cinema-seat-preview-experiment/" class="">Cinema Seat Preview Experiment</a></h3>
+                   
+                    <div class="clr"></div>
+                </article>
+            					</div>
+		
+	</div>
+
+	<div class="ct-ads">
+		<div class="ct-ads-info">
+			<h4>Advertisement</h4>
+			<a href="http://tympanus.net/codrops/advertise/" class="ct-advertise-here">
+				<i class="ct-icon-info"></i>
+				<span>Advertise Here</span>
+			</a>
+		</div>
+		<div data-serve="CKYD5KE" id="bsap_1298539" class="bsap bsap_1298539"><iframe id="ad_1298539_backfill1_frame" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/raw_534b2354ecbc955d765be7a12fef9c76.html" class="bsap_adframe" scrolling="no" frameborder="0" height="250" width="300"></iframe>
+
+<script class="ignoreme" id="auto_6" type="text/javascript"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(48208, 'CKYD5KE', ''); </script>
+<script class="ignoreme" id="auto_7" type="text/javascript"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+	</div>
+
+    		
+    	<div class="clr"></div>
+</aside>
+
+				<div class="clr"></div>
+				<script gapi_processed="true" type="text/javascript" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/plusone.js"></script>
+			    </div>
+</div>
+		<footer class="ct-footer">
+			
+			<div class="ct-inner ct-cf">
+				<nav class="ct-cf">
+					<ul>
+						<li><a href="http://tympanus.net/codrops/category/tutorials/">Tutorials</a></li>
+						<li><a href="http://tympanus.net/codrops/category/articles/">Articles</a></li>
+						<li><a href="http://tympanus.net/codrops/category/playground/">Playground</a></li>
+						<li><a href="http://tympanus.net/codrops/category/blueprints/">Blueprints</a></li>
+						<li><a href="http://tympanus.net/codrops/css_reference/">CSS Reference</a></li>
+					</ul>
+					<ul>
+						<li><a href="http://tympanus.net/codrops/category/news/">News</a></li>
+						<li><a href="http://tympanus.net/codrops/category/giveaways/">Giveaways</a></li>
+						<li><a href="http://tympanus.net/codrops/category/freebies/">Freebies</a></li>
+						<li><a href="http://tympanus.net/codrops/collective/">Collective</a></li>
+					</ul>
+					<ul>
+						<li><a href="http://tympanus.net/codrops/about/">About</a></li>
+						<li><a href="http://tympanus.net/codrops/contact/">Contact</a></li>
+						<li><a href="http://tympanus.net/codrops/archives/">Archives</a></li>
+						<li><a href="http://tympanus.net/codrops/deals/">Deals</a></li>
+						<li><a href="http://tympanus.net/codrops/advertise/">Advertise</a></li>
+					</ul>
+					<ul>
+						<li><a href="http://tympanus.net/codrops/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="http://tympanus.net/codrops/licensing/">License</a></li>
+						<li><a href="http://tympanus.net/codrops/credits/">Credits</a></li>
+						<li><a href="http://tympanus.net/codrops/impressum/">Impressum</a></li>
+					</ul>
+				</nav>
+				<div class="ct-items ct-cf">
+					<div class="ct-item ct-copyright">
+						<span>© Codrops 2016 by</span> 
+						<a href="http://tympanus.net/" title="Tympanus">Tympanus</a>
+					</div>
+					<div class="ct-item ct-cdn">
+						<span>Content delivered by</span>
+						<a href="http://tracking.maxcdn.com/c/24359/3982/378?u=http%3A%2F%2Fwww.maxcdn.com%2Fcodrops%2F" title="Content Distribution Network" target="blank">Content Distribution Network</a>
+						<img src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/378.gif" height="1" width="1">
+					</div>	
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/S85PKcovKNYvL9DNzEvOKU1JLdbPKtZPzs_NTc0r0S1KLcip1MvNzNMxBCkpq.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wp_typeahead = {"ajaxurl":"http:\/\/tympanus.net\/codrops\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Circular%20Content%20Carousel%20with%20jQuery%20Archivos/M9QvL9AtqSxITcxITUzRzypG4esk56cU5ReABTPzknNKU1KLoWpSc5NSU_RyM.js"></script>
+</div><!--ct-container-->
+	
+
+</body></html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk: enhanced
+Content Delivery Network via codropspz.tympanus.netdna-cdn.com
+
+ Served from: tympanus.net @ 2016-08-04 18:28:44 by W3 Total Cache -->
